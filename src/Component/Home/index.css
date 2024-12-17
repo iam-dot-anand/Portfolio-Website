@@ -1,0 +1,89 @@
+.intro_text > :nth-child(1) {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--white);
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 3s steps(10) 0s forwards, blink 0.25s step-end infinite;
+}
+
+.intro_text > :nth-child(2) {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--white);
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 2s steps(20) 2s forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  500% {
+    border-color: transparent;
+  }
+}
+
+.intro_text > :nth-child(3) {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.hire_btn {
+  border: none;
+  padding: 5px 40px;
+  border-radius: 25px;
+  font-size: x-large;
+  font-weight: bold;
+  background-color: #fff;
+  color: #0b132b;
+  transition: all 0.5s ease-out;
+}
+
+.hire_btn:hover {
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.img_Bg {
+  background-image: radial-gradient(black 50%, white 50%, #0b132b 90%);
+  border-radius: 15px;
+  border: 5px solid transparent;
+  box-shadow: 0 0 0 5px rgba(11, 19, 43, 0.6);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.img_Bg:hover {
+  box-shadow: 0 0 0 10px rgba(11, 19, 43, 0.8);
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 600px) {
+  .img_Bg {
+    width: 300px;
+    height: 310px;
+  }
+  
+
+  .rev_Img {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px;
+  }
+  .left{
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,176 @@
+.timeline{
+    position: relative;
+    /* max-width: 1200px; */
+    /* margin: 100px auto; */
+}
+.project_card{
+    position: relative;
+    width: 50%;
+    padding: 20px 30px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes appear {
+    from{
+        opacity:0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+        
+    }
+}
+
+.text-box{
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+    border: 2px solid;
+    padding: 5px 18px;
+    opacity: 0.5;
+}
+.text-box:hover{
+    opacity: 1;
+}
+
+.text{
+    font-size: large;
+}
+.even{
+     left:0%;
+}
+.odd{
+     left:50%
+}
+.odd span{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #fff;
+    left: -20px;
+    top: 30.2%;
+    color: #ffffff;
+    opacity: 1;
+    z-index: 10;
+}
+.even span{
+    position: absolute;
+    width: 40px;
+    border-radius: 50px;
+    right:-4.1% ;
+    top: 35%;
+    z-index: 10;
+    color: black;
+}
+
+.timeline::after{
+    content: "";
+    position: absolute;
+    width: 3px;
+    background: #fff;    
+    height: 100%;
+    top: 0;
+    left:   50%;
+    margin-left: -3px;
+    z-index: 0;
+    /* opacity: 0.5;     */
+    animation: movedown 3s linear forwards;
+}
+@keyframes movedown {
+    0%{
+        height: 0;
+        opacity: 0;
+    }
+    100%{
+        height: 100%;
+        /* opacity: 1; */
+    }
+}
+
+.even::after{
+    content: "";
+    position: absolute;
+    width: 27px;
+    background: #fff;    
+    height: 3px;
+    top:50%;
+    right:   0.5%;
+    /* margin-left: -3px; */
+    z-index: 0;
+    /* opacity: 0.5; */
+    animation: moveEven 3s linear forwards;
+}
+@keyframes moveEven {
+    0%{
+        width:0;
+        
+    }
+    100%{
+        width:27px;
+        
+    }
+}
+.odd::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    background: #fff;    
+    height: 3px;
+    top:50%;
+    left:0%;
+    /* margin-left: -3px; */
+    z-index: 0;
+    /* opacity: 0.5; */
+    animation: moveodd 3s linear forwards;
+}
+
+@keyframes moveodd {
+    0%{
+        width:0;
+        
+    }
+    100%{
+        width:30px;
+        
+    }
+}
+
+
+
+
+
+@media screen and (max-width:600px){
+    .mobile-view{
+        margin: 11% 11%;
+    }
+    .timeline{
+        margin: 50px auto;
+    }
+    .timeline::after{
+        left: 62px;
+    }
+    .project_card{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .odd{
+        left: 0;
+    }
+
+    .project_card::after{
+        content: "";
+        position: absolute;
+        width: 10% ;
+        background: #fff;    
+        height: 3px;
+        top:50%;
+        left:11.3%;
+        z-index: 0;
+    }
+    
+}

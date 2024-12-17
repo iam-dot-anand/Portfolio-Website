@@ -1,0 +1,63 @@
+.bg {
+  background-color: #0b132b;
+}
+
+.pdf-container {
+  width: 400px;
+  height: 00px;
+}
+
+.about-section {
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.icon {
+  font-size: 3rem;
+  transition: transform 0.5s ease;
+}
+
+.icon:hover {
+  transform: scale(1.5);
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.animation {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+    clip-path: circle(100% 100% 0 0);
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+    /* clip-path: insert(50% 50% 50% 50%); */
+    clip-path: circle(100% 100% 0 0);
+  }
+}
+
+.gradient {
+  /* background-image: linear-gradient(to right, #0b132b , #030d1f, #0b132b); */
+  background-image: linear-gradient(to right, #0b132b, #020717, #0b132b);
+}
+
+@media (max-width: 767px) {
+  .col-6 {
+    margin-bottom: 20px;
+  }
+}
