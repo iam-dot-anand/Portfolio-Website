@@ -8,7 +8,7 @@ function ProjectCard({ project }) {
   return (
     <div
       className={`${
-        project.class === "odd" ? "project_card odd" : "project_card even"
+        project.class === "odd" ? "project_card odd animation" : "project_card even animation"
       }`}
     >
       <div className="text-box ">
