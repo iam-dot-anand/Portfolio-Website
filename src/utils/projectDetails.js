@@ -1,7 +1,7 @@
 export const projectArr = [
     {
       class:'odd',
-      link:'#',
+      link:'https://swiggy-red.vercel.app/',
       ProjectName:'Swiggy Clone (MERN Stack)',
       decs:[
         'Developed a Swiggy clone application using the MERN stack "(MongoDB, Express.js, React.js, Node.js)"} with Redux Toolkit for state management.',
@@ -28,7 +28,6 @@ export const projectArr = [
         'It is hosted on Netlify.'
       ]
     },
-  
     {
       class:'even',
       link:'https://667cdecdd40c4c4d74457111--incandescent-semifreddo-a3b638.netlify.app/',
