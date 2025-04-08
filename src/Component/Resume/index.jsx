@@ -1,5 +1,5 @@
 import React from "react";
-import pdf from "../../Assets/Anand_Resume.pdf";
+import pdf from "../../Assets/Anand_CV.pdf";
 import "./index.css";
 
 export const Resume = () => {

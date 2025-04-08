@@ -13,7 +13,7 @@ export const Home = () => {
       <div className="d-flex px-5 justify-content-between align-items-center container rev_Img py-5">
         <div className="left w-50">
           <div className="intro_text">
-            <p className="mb-0">Hy! I am</p>
+            <p className="mb-0">Hi ! I am</p>
             <p className="mb-0">Anand Vishwakarma</p>
             <p className="">
               Looking for a job opportunity in Software Development

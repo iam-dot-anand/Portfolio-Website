@@ -139,27 +139,24 @@
     }
 }
 
-
-
-
-
 @media screen and (max-width:600px){
-    .mobile-view{
-        margin: 11% 11%;
-    }
-    .timeline{
+    /* .timeline{
         margin: 50px auto;
-    }
-    .timeline::after{
+    } */
+    /* .timeline::after{
         left: 62px;
-    }
+    } */
     .project_card{
         width: 100%;
-        padding-left: 80px;
-        padding-right: 25px;
     }
     .odd{
         left: 0;
+    }
+    .timeline::after,
+    .project_card::after,
+    .even::after,
+    .odd::after {
+        display: none;
     }
 
     .project_card::after{
@@ -174,3 +171,4 @@
     }
     
 }
+

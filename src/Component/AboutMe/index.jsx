@@ -1,12 +1,12 @@
 import React from "react";
 import "./index.css";
-import { SiMongodb, SiExpress, SiRedux } from "react-icons/si";
+import { SiMongodb, SiExpress, SiRedux,SiMysql } from "react-icons/si";
 import {
   FaReact,
   FaNodeJs,
   FaBootstrap,
   FaGitAlt,
-  FaHtml5,
+  FaHtml5,FaPython,
 } from "react-icons/fa";
 import { IoLogoJavascript, IoLogoCss3 } from "react-icons/io5";
 import { TbBrandCpp } from "react-icons/tb";
@@ -61,8 +61,16 @@ export const About = () => {
             <p>JAVASCRIPT</p>
           </div>
           <div className="col-6 col-md-3 col-lg-2 text-center">
+            <FaPython className="icon text-warning-emphasis" />
+            <p>Python</p>
+          </div>
+          <div className="col-6 col-md-3 col-lg-2 text-center">
             <TbBrandCpp className="icon" />
             <p>C++</p>
+          </div>
+          <div className="col-6 col-md-3 col-lg-2 text-center">
+            <SiMysql className="icon text-info-emphasis" />
+            <p>MySQL</p>
           </div>
           <div className="col-6 col-md-3 col-lg-2 text-center">
             <FaGitAlt className="icon text-danger" />
