@@ -6,6 +6,7 @@ import { SiGmail } from "react-icons/si";
 import AnandImg from "../../Assets/AnandImg.jpg";
 import TabIcon from "../TabIcon";
 
+
 export const Home = () => {
   return (
     <div className="bg">
